@@ -20,12 +20,12 @@ module.exports = {
       },
       '@taroify/core',
     ],
-    /* [
+    [
       'module-resolver',
       {
         root: ['./src'],
         extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
       },
-    ],*/
+    ],
   ],
 };

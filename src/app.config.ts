@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  pages: ['pages/index/index', 'pages/form/index' /*, 'pages/jotai/index'*/],
+  pages: ['pages/index/index', 'pages/form/index', 'pages/jotai/index'],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',

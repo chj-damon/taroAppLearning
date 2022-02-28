@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { BaseEventOrig, FormProps } from '@tarojs/components';
 import { FormInstance } from '@taroify/core/form/form.shared';
-import { createShareModel } from '../../services/createShareModel';
+import { createShareModel } from 'services/createShareModel';
 
 function useLocalModelService() {
   const formRef = useRef<FormInstance>();
