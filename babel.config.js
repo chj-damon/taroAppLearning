@@ -3,29 +3,29 @@
 module.exports = {
   presets: [
     [
-      "taro",
+      'taro',
       {
-        framework: "react",
+        framework: 'react',
         ts: true,
       },
     ],
   ],
   plugins: [
     [
+      'import',
+      {
+        libraryName: '@taroify/core',
+        libraryDirectory: '',
+        style: true,
+      },
+      '@taroify/core',
+    ],
+    /* [
       'module-resolver',
       {
         root: ['./src'],
         extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
       },
-    ],
-    [
-      "import",
-      {
-        libraryName: "@taroify/core",
-        libraryDirectory: "",
-        style: true,
-      },
-      "@taroify/core",
-    ]
+    ],*/
   ],
 };
