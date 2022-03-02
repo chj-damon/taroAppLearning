@@ -1,18 +1,17 @@
 import { View } from '@tarojs/components';
-import { Form, Cell, Button, Input, SafeArea } from '@taroify/core';
+import { Form, Cell, Button, Input } from '@taroify/core';
 
 import useShareModelService from './useShareModelService';
 import { Fragment } from 'react';
+import Container from 'components/Container';
 
 export default function Index() {
   return (
-    <>
-      <SafeArea position="top" />
+    <Container>
       <useShareModelService.Provider>
         <TestForm />
       </useShareModelService.Provider>
-      <SafeArea position="bottom" />
-    </>
+    </Container>
   );
 }
 

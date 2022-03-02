@@ -2,6 +2,7 @@ import { Button } from '@taroify/core';
 import { View } from '@tarojs/components';
 import { atomA, atomB, atomC, atomD } from './localAtom';
 import { useAtomValue, useUpdateAtom } from 'jotai/utils';
+import Container from 'components/Container';
 
 export default function JotaiDemo() {
   const updateAtomA = useUpdateAtom(atomA);
@@ -23,28 +24,24 @@ export default function JotaiDemo() {
   };
 
   return (
-    <View>
+    <Container>
       <DisplayAtomA />
-      <Button color="primary" onClick={modifyAtomA}>
+      <Button block color="primary" onClick={modifyAtomA}>
         修改atomA
       </Button>
-      <View style={{ height: 10, backgroundColor: '#eee' }} />
       <DisplayAtomB />
-      <Button color="primary" onClick={modifyAtomB}>
+      <Button block color="primary" onClick={modifyAtomB}>
         修改atomB
       </Button>
-      <View style={{ height: 10, backgroundColor: '#eee' }} />
       <DisplayAtomC />
-      <Button color="primary" onClick={modifyAtomC}>
+      <Button block color="primary" onClick={modifyAtomC}>
         修改atomC
       </Button>
-      <View style={{ height: 10, backgroundColor: '#eee' }} />
       <DisplayAtomD />
-      <Button color="primary" onClick={modifyAtomD}>
+      <Button block color="primary" onClick={modifyAtomD}>
         修改atomD
       </Button>
-      <View style={{ height: 10, backgroundColor: '#eee' }} />
-    </View>
+    </Container>
   );
 }
 
