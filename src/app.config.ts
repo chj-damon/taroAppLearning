@@ -5,6 +5,7 @@ export default defineAppConfig({
     'pages/jotai/index',
     'pages/tabBar/home/index',
     'pages/tabBar/mine/index',
+    'pages/login/index',
   ],
   window: {
     backgroundTextStyle: 'light',
