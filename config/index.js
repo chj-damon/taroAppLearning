@@ -9,7 +9,7 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [],
+  plugins: ['taro-plugin-compiler-optimization'],
   defineConstants: {},
   copy: {
     patterns: [],
